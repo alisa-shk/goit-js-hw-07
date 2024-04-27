@@ -27,16 +27,18 @@ const images = [
 
 
 
-
 const galleryContainerEl = document.querySelector('.gallery');
 
 const pictures = images.map(image => {
+  const imageLi = document.createElement("li");
   const imageEl = document.createElement("img");
   imageEl.src = image.url;
   imageEl.alt = image.alt;
+  imageEl.width = 360;
+  imageEl.height = "100%";
 
-  return imageEl;
+  imageLi.appendChild(imageEl);
+  return imageLi;
 })
 
 galleryContainerEl.append(...pictures);
-console.log(galleryContainerEl);

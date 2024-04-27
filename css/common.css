@@ -106,11 +106,6 @@ ul .item {
   column-gap: 24px;
 }
 
-.gallery img {
-  width: calc((100% - 48px) / 3);
-}
-
-
 /* ========== TASK 3 ========== */
 
 
